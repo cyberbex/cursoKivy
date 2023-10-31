@@ -7,8 +7,9 @@ Interface:
         #background_color: 0.5,0.5,1,1
         background_normal:'buy.png'
         background_down:'sell.png'
-        disabled:True
+        #disabled:True
         background_disabled_normal:'buy.png'
         background_disabled_down:'sell.png'
         pos:root.width/2-100,root.height/2-50
         markup:True
+        on_press:root.printing_msg()
