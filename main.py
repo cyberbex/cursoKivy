@@ -3,8 +3,9 @@ from kivy.uix.floatlayout import FloatLayout
 
 
 class Interface(FloatLayout):
-    def printing_msg(self):
-        print('hello gamba')
+    def display_information(self):
+        data = self.ids.textInput.text
+        self.ids.label.text = data
 
 
 class FirstApp(App):
